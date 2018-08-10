@@ -126,11 +126,6 @@ p:nth-child(-n+2)   {
 .gs-content b {
   font-weight: 500;
 }
-f
-.gs-content li {
-  margin-top: 16px;
-  margin-left: 14px;
-}
 
 .gs-content ol li {
   list-style: upper-roman;
@@ -140,10 +135,11 @@ f
   list-style: circle;
 }
 
-.gs-content li li {
-  margin-top: 4px;
-  margin-left: 10px;
+.gs-content li {
+  margin-top: 16px;
+  margin-left: 14px;
 }
+
 
 .gs-content article.sideImg {
   display: flex;
