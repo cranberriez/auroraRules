@@ -8,7 +8,7 @@
 
 :root {
   /* --color: #e74c3c; */
-  --color: #2196F3;
+  --color: #8f357d;
 }
 
 .noselect {
@@ -34,6 +34,16 @@ html, body {
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+.mainColor {
+  color: var(--color);
+}
+
+h1 {}
+h2 {}
+h3 {
+  font-weight: 500;
 }
 
 .section-title {
@@ -105,17 +115,29 @@ p:nth-child(-n+2)   {
 }
 
 .gs-content h2 {
-  margin: 15px 0 10px;
-  margin-left: -6px;
+  margin: 20px 0 10px;
+  font-weight: 500;
+}
+
+.gs-content h2:not(:first-child) {
+  margin-top: 35px;
 }
 
 .gs-content b {
   font-weight: 500;
 }
-
+f
 .gs-content li {
-  margin-top: 10px;
+  margin-top: 16px;
   margin-left: 14px;
+}
+
+.gs-content ol li {
+  list-style: upper-roman;
+}
+
+.gs-content ul li {
+  list-style: circle;
 }
 
 .gs-content li li {
@@ -137,10 +159,6 @@ p:nth-child(-n+2)   {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.gs-content ol li {
-  margin-top: 6px;
 }
 
 .gs-content .margin-top {

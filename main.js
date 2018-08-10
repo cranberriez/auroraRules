@@ -9,7 +9,6 @@ function navScroll() {
 }
 
 $(function(){
-  $('.joinServer').hide();
 
   console.log("Stupid google errors below, sry")
   // Add smooth scrolling to all links (Not Made By Jacob)
@@ -35,29 +34,4 @@ $(function(){
    navScroll()
 	});
   navScroll()
-
-  $('.vid-hide').on('click',function() {
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active')
-      $('.vid-inner').show()
-      $(this).text('Hide Video')
-    }
-    else {
-      $(this).addClass('active')
-      $('.vid-inner').hide()
-      $(this).text('Show Video')
-    }
-  })
-
-  $('.joinButton').on('click', function() {
-    if (!$('.joinServer').hasClass('active')) {
-      $('.joinServer').fadeIn()
-    }
-  })
-
-  $('.joinServer').on('click', function(e) {
-    if (e.target !== this)
-      return;
-    $('.joinServer').fadeOut('fast');
-  })
 })
