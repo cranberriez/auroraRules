@@ -43,7 +43,19 @@ html, body {
 h1 {}
 h2 {}
 h3 {
-  font-weight: 500;
+  font-weight: 400;
+}
+h4 {
+  width: 60%;
+  border-bottom: 2px solid white;
+  font-weight: 300;
+  font-size: 1.2em;
+  padding-bottom: 2px;
+  margin-top: 25px;
+}
+
+h4.fix {
+  margin-bottom: -10px;
 }
 
 .section-title {
@@ -62,18 +74,18 @@ h3 {
 }
 
 .gs-toc {
-  width: 450px;
+  width: 500px;
 }
 
-.gs-toc ul {
+.gs-toc ul:nth-child(1) {
   list-style: none;
-  padding: 5px 0 0 10px;
+  padding: 0 0 0 10px;
   margin-left: 50px;
   position: sticky;
   top: 100px;
 }
 
-.gs-toc ul li {
+.gs-toc .head {
   margin-top: 10px;
 }
 
@@ -83,6 +95,8 @@ p:nth-child(-n+2)   {
 
 .gettingStarted a {
   color: var(--color);
+  font-weight: 400;
+  letter-spacing: 1px;
   text-decoration: none;
 }
 
@@ -161,18 +175,32 @@ p:nth-child(-n+2)   {
   margin-top: 12px;
 }
 
-.blue {
+.divider {
+  padding: 0 0 4px 0 !important;
+  width: 90%;
+  margin-top: 50px;
+  font-size: 24px;
+  border-bottom: 1px solid var(--color);
   color: var(--color);
+  font-weight: 300;
+}
+
+.blue {
+  color: #3498db;
+  border-color: #3498db;
 }
 
 .green {
   color: #8BC34A;
+  border-color: #8BC34A;
 }
 
 .yellow {
   color: #FFC107;
+  border-color: #FFC107;
 }
 
 .red {
   color: #F44336;
+  border-color: #F44336;
 }
